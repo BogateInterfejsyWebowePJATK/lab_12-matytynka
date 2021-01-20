@@ -12,3 +12,7 @@ div {
      border-collapse: collapse;
      margin: 0 auto;
  }
+
+ #zadanie {
+     border: 1px solid black;
+ }
