@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import userData from "../data/userdata.json"
 
-export default function Login({onLogin = f => f}) {
+export default function Login({userData, handleLogin = f => f}) {
 
     const [data, setData] = useState({
         email: "",
@@ -41,7 +40,7 @@ export default function Login({onLogin = f => f}) {
         let user = validate();
         if(user !== false) {
             setLogged(true);
-            onLogin(user);
+            handleLogin(user);
         }
     }
 

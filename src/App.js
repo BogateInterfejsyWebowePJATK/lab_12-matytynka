@@ -2,6 +2,7 @@ import './App.css';
 import Calculator from './components/calculator';
 import Table from './components/table';
 import Login from './components/login';
+import LoginPage from './components/loginPage';
 
 function App() {
   return (
@@ -24,6 +25,12 @@ function App() {
               Zadanie 3:
           </p>
               <Login/>
+          </div>
+          <div className="Registration" id="zadanie">
+              <p>
+                  Zadanie 4:
+              </p>
+              <LoginPage/>
           </div>
       </div>
   );
