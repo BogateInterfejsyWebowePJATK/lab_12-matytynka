@@ -53,7 +53,7 @@ export default function RegisForm({handleRegister = f => f}) {
             } else {
                 let pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i)
                 if (!pattern.test(input["email"])) {
-                    errs["email"] = "Podałes nieprawidłowy e-mail"
+                    errs["email"] = "Nieprawidłowy e-mail"
                     err = false
                 } else {
                     delete errs["email"]
@@ -93,7 +93,7 @@ export default function RegisForm({handleRegister = f => f}) {
         }
         if (fieldName === "agreement" || all) {
             if (!input["agreement"]) {
-                errs["agreement"] = "Musisz wyrazić zgode"
+                errs["agreement"] = "Musisz wyrazić zgodę"
                 err = false
             } else {
                 delete errs["agreement"]

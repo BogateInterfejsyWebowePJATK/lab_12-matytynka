@@ -1,7 +1,6 @@
 import './App.css';
 import Calculator from './components/calculator';
 import Table from './components/table';
-import Login from './components/login';
 import LoginPage from './components/loginPage';
 
 function App() {
@@ -20,15 +19,9 @@ function App() {
               </p>
               <Table/>
           </div>
-          <div className="Login" id="zadanie">
-          <p>
-              Zadanie 3:
-          </p>
-              <Login/>
-          </div>
-          <div className="Registration" id="zadanie">
+          <div className="LoginPage" id="zadanie">
               <p>
-                  Zadanie 4:
+                  Zadanie 3/4:
               </p>
               <LoginPage/>
           </div>
